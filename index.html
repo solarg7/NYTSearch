@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>NY Times Project</title>
+
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style type="text/css">
+		
+		header {
+			background-color: #2e64ba;
+			padding: 25px 0px 25px 0px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+
+		h1 {
+			color: white;
+			font-size: 5em;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+		
+			<div class="row">
+				
+				<div class="col-md-12">
+					
+					<header><h1 class="text-center">New York Times Search</h1></header>
+
+					<div class="panel panel-primary">
+					  <div class="panel-heading">
+					    <h3 class="panel-title">Search Parameters</h3>
+					  </div>
+					  <div class="panel-body">
+					   	
+					   		<form>
+								  <div class="search">
+								    <label for="exampleInputEmail1">Search Tearm</label>
+								    <input  class="form-control" id="search-terms">
+								    </div>
+								  
+
+
+									<div class="numberRecord">
+									    <label for="records">Number of Records to Retrive</label>
+									    <select class="form-control" id="itemNumber">
+									      <option>1</option>
+									      <option>2</option>
+									      <option>3</option>
+									      <option>4</option>
+									      <option>5</option>
+									    </select>
+									  </div>
+
+								<div class="startYear">
+								    <label for="exampleInputPassword1">Start Year</label>
+								    <input type="password" class="form-control" id="startYear">
+								</div>
+
+								<div class="endYear">
+								    <label>End Year</label>
+								    <input type="end-year" class="form-control" id="endYear">
+								</div><br>
+
+
+								  <button type="search" class="btn btn-primary" id="searchBtn">Search</button>
+								  <button type="clear" class="btn btn-primary" id="clearBtn">Clear</button>
+							</form>
+
+
+
+
+
+					  </div>
+					</div>
+
+
+					<div class="panel panel-primary">
+					  <div class="panel-heading">
+					    <h3 class="panel-title">Top Articles</h3>
+					  </div>
+					  <div class="panel-body" id="article-list" >
+
+					    
+					  </div>
+					</div>
+
+
+
+
+
+				</div>
+		</div>
+
+
+	</div>
+
+	
+</body>
+<script type="text/javascript">
+
+	 $("#searchBtn").on("click", function() {
+
+	 	var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
+
+
+
+	}});
+	
+	// var searchInput = $('#search-terms').attr('value');
+
+	// console.log(searchInput);
+
+</script>
+
+</html>
+
+
+
+
+	
+
+
